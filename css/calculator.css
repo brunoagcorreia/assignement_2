@@ -1,0 +1,142 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../img/background.jpg");
+  background-position: center;
+}
+
+/* Using box shadows to create 3D effects */
+#calculator {
+	width: 320px;
+	height: 410px;
+
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+
+	background: #b5c0e4;
+	border-radius: 5px;
+	box-shadow: #030e3188 10px 10px 20px;
+}
+
+/* Top portion */
+.top span.erase {
+	float: left;
+	font-family: Comfortaa; Monaco;
+	font-size: 30px;
+}
+
+/* Inset shadow on the screen to create indent */
+.top .screen {
+	height: 60px;
+	width: 200px;
+
+	float: right;
+
+	padding: 0 10px;
+
+	background: #e6eaf6;
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.3);
+
+	/* Typography */
+	line-height: 65px;
+	color: black;
+	text-align: right;
+	letter-spacing: 1px;
+	font-family: 'Press Start 2P'; Impact;
+	font-size: 25px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* erase floats */
+.keys, .top {overflow: hidden;}
+
+/* Applying same to the keys */
+.keys span, .top span.erase {
+	float: left;
+	position: relative;
+	top: 0;
+
+	cursor: pointer;
+
+	width: 64px;
+	height: 64px;
+
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+
+	margin: 0 7px 11px 0;
+	padding: 1px;
+
+	color: #051752;
+	line-height: 66px;
+	text-align: center;
+	font-family: Comfortaa; Monaco;
+	font-size: 25px;
+
+	/* prevent selection of text inside keys */
+	user-select: none;
+
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+/* Remove right margins from operator keys */
+/* style different type of keys (operators/evaluate/erase) differently */
+.keys span.operator {
+	background: #546dc0;
+	margin-right: 0;
+}
+
+.keys span.eval {
+	background: #f1ff92;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+
+.top span.erase {
+	background: #0b2fa5;
+	box-shadow: 0px 4px #072073;
+	color: white;
+}
+
+/* Some hover effects */
+.keys span:hover {
+	background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+.keys span.eval:hover {
+	background: #abb850;
+	box-shadow: 0px 4px #717a33;
+	color: #ffffff;
+}
+
+.top span.erase:hover {
+	background: #082584;
+	box-shadow: 0px 4px #051752;
+	color: white;
+}
+
+/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
+.keys span:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys span.eval:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top span.erase:active {
+	top: 4px;
+	box-shadow: 0px 0px #d3545d;
+}

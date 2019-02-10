@@ -1,0 +1,352 @@
+* { box-sizing: border-box; }
+
+/* Body */
+
+body {
+  position: relative;
+  background-color: #e5e5e5;
+  color: #222;
+}
+
+.anchor {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 40px
+}
+
+#goals {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* navbar */
+a.navbar-left {
+  text-decoration: none;
+}
+
+/* header */
+
+.header_experimental {
+  max-width: 100%;
+  min-height: 480px;
+  background-image: url("../img/copan_banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_text h1 {
+  color: #15c;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e5e5e5e5;
+  padding: .5em;
+  letter-spacing: .1em;
+}
+
+
+/* buttons, links and elements */
+
+.btn {
+  background-color: #15c!important;
+  color: #e5e5e5!important;
+  border-color: #15c!important;
+}
+
+a {
+  color: #37e;
+}
+
+a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1155cc;
+}
+
+
+hr {
+  border-top: 1px solid #222;
+}
+
+/* about */
+
+.about_header {
+  text-align: left;
+  float: left;
+  padding-left: 15px;
+}
+
+.modal_button_cv {
+  float:right;
+  display: inline-block;
+  padding: 2em 0 1em;
+}
+
+#modal_cv_en {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+.about_skills {
+  background-color: #37e;
+  color: #e5e5e5;
+  padding: 1%;
+  border-radius: 5em 2em;
+}
+
+.about_skills h4 {
+  text-align: center;
+}
+
+.about_main_text {
+  padding-top: 4%;
+  clear: left;
+}
+
+.about_photo {
+  border-radius: 2em 5em;
+}
+
+
+/* Work */
+
+.work_img {
+  display: block; /* centers element with margin */
+  margin: auto; /* centers image */
+  position: relative;
+  box-shadow: #787878 3px 3px 3px;
+}
+
+.projects {
+  height: auto;
+  padding: 1em;
+}
+
+.card {
+	height: 300px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back_flip {
+  padding: 1em;
+  background: #787878;
+  color: white;
+}
+
+/* Projects */
+
+.work_info {
+  color: #222;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: none;
+}
+
+.work_title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-weight: bolder;
+  letter-spacing: 0.4em;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.work_cat {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* tooltips & popvover */
+
+.tooltip {
+  width: 50%;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.popover {
+  width: 100%;
+  background-color: #787878!important;
+  color: #e5e5e5!important;
+  border: none;
+}
+
+.popover-title {
+  width: 100%;
+  background-color: #222!important;
+  color: #e5e5e5!important;
+  border: none;
+}
+
+.popover .arrow {
+  display: none;
+}
+
+/* FAQ page */
+
+.panel-heading, .panel-heading a {
+  background-color: #222!important;
+  color: #e5e5e5!important;
+  -webkit-transition: background-color 1s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.panel-body, .panel-body p  {
+  font-family: Roboto, Arial, sans-serif;
+  text-align: left;
+  background-color: #37e!important;
+  color: #e5e5e5!important;
+  text-decoration: none!important;
+}
+
+.panel-footer, .panel-footer p {
+  font-family: Roboto, Arial, sans-serif;
+  text-align: left;
+  background-color: #15c!important;
+  color: #e5e5e5;
+}
+
+/* contact */
+
+.contact_container {
+  background-image: url("../img/copan_banner_2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  color: #e5e5e5;
+  -webkit-transition: color 1s;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px black;
+}
+
+#contact .header {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.contact_container a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.form_instruction {
+  text-align: right;
+}
+
+.contact_links {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 0.5em;
+}
+
+.contact_map {
+  height: 20em;
+  width: 100%;
+  text-shadow: none;;
+  padding-bottom: 1em;
+}
+
+.form-group {
+  padding-left: 0;
+}
+
+#visible-name {
+  margin-bottom: 0;
+}
+
+.twitter-follow-button {
+  float: right;
+  margin: 15px;
+  /* padding-top: 1em; */
+}
+
+/* footer */
+
+footer {
+  padding-top: 1em;
+  color: #e5e5e5;
+  background-color: #222;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+}
+
+.footer_link {
+  float: left;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.footer_link:hover a, .footer_link a:visited {
+  text-decoration: none;
+  color: #37e;
+}
+
+.footer_license {
+  float: right;
+}
+
+.footer_license img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+/*Typography*/
+
+h1, h2, h3, h4, label, footer {
+  font-family: Lato, Futura, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.carousel-caption h2 {
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.carousel-caption p {
+  font-size: 2em;
+}
+
+a, p, li, input, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.navbar-brand a, .navbar-nav a {
+  font-family: Lato, Futura, Helvetica, sans-serif;
+}
+
+.navbar-brand a {
+  /* color: #37e; */
+  -webkit-animation: color-change 30s infinite;
+}
+
+@-webkit-keyframes color-change {
+  0% { color: #15c; }
+  10% { color: #37e; }
+  50% { color: #e5e5e5; }
+  90% { color: #37e; }
+  100% { color: #15c; }
+}
